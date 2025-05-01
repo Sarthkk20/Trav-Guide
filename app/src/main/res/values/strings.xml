@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TravGuide</string>
+    <string name="app_logo">TravGuide Logo</string>
+    <string name="login_title">Login to your account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="welcome_to_travguide">Welcome to TravGuide!</string>
+    <string name="get_started">Get Started</string>
+
+</resources>
