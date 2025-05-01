@@ -8,6 +8,7 @@ import android.os.Looper
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.google.firebase.FirebaseApp
 import com.project.travguide.R
 import com.project.travguide.ui.welcome.WelcomeActivity
 
@@ -15,6 +16,7 @@ import com.project.travguide.ui.welcome.WelcomeActivity
 class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        FirebaseApp.initializeApp(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
@@ -22,12 +24,12 @@ class SplashActivity : AppCompatActivity() {
 
         Glide.with(this)
             .asGif()
-            .load(R.raw.splash_animation) // Place your GIF in res/drawable and name it `loading_gif.gif`
+            .load(R.raw.splash_animation)
             .into(gifImageView)
 
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, WelcomeActivity::class.java))
             finish()
-        }, 500)
+        }, 1000)
     }
 }

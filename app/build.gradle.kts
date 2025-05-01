@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.ksp)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -10,11 +11,13 @@ android {
 
     buildFeatures {
         viewBinding = true
+        //noinspection DataBindingWithoutKapt
+        dataBinding = true
     }
 
     defaultConfig {
         applicationId = "com.project.travguide"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -54,5 +57,10 @@ dependencies {
     implementation(libs.splashscreen)
     implementation(libs.glide)
     ksp(libs.glide.ksp)
+
+    implementation(platform(libs.firebase.bom))  // Firebase BOM
+    implementation(libs.firebase.auth) // Firebase Auth
+    implementation(libs.firebase.firestore) // Firebase Firestore
+    implementation(libs.firebase.analytics) // Firebase Analytics
 
 }
