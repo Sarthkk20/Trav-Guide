@@ -11,6 +11,8 @@ android {
 
     buildFeatures {
         viewBinding = true
+        //noinspection DataBindingWithoutKapt
+        dataBinding = true
     }
 
     defaultConfig {
@@ -56,6 +58,7 @@ dependencies {
     implementation(libs.glide)
     ksp(libs.glide.ksp)
 
+<<<<<<< HEAD
     // Retrofit + Gson
     implementation(libs.retrofit)
     implementation(libs.gson.converter)
@@ -75,5 +78,11 @@ dependencies {
     implementation(libs.coroutines.core)
     implementation(libs.coroutines.android)
 
+=======
+    implementation(platform(libs.firebase.bom))  // Firebase BOM
+    implementation(libs.firebase.auth) // Firebase Auth
+    implementation(libs.firebase.firestore) // Firebase Firestore
+    implementation(libs.firebase.analytics) // Firebase Analytics
+>>>>>>> 152816158d6e9ab8254eb5398993969fbc7d9a38
 
 }

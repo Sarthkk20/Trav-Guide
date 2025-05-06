@@ -1,5 +1,6 @@
 package com.project.travguide.ui.home
 
+<<<<<<< HEAD
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -48,3 +49,26 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 }
+=======
+import android.annotation.SuppressLint
+import android.os.Bundle
+import android.view.Gravity
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+
+class HomeActivity : AppCompatActivity() {
+    @SuppressLint("SetTextI18n")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        val textView = TextView(this).apply {
+            text = "Welcome to TravGuide!"
+            textSize = 24f
+            gravity = Gravity.CENTER
+            setPadding(32, 32, 32, 32)
+        }
+
+        setContentView(textView)
+    }
+}
+>>>>>>> 152816158d6e9ab8254eb5398993969fbc7d9a38

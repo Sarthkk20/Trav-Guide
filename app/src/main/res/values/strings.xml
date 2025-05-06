@@ -7,8 +7,18 @@
     <string name="login">Login</string>
     <string name="welcome_to_travguide">Welcome to TravGuide!</string>
     <string name="get_started">Get Started</string>
+<<<<<<< HEAD
     <string name="tourist_spots">\n\n</string>
     <string name="travelID">\n\n</string>
     <string name="travelid">travelID</string>
+=======
+    <string name="enter_otp">Enter OTP</string>
+    <string name="otp">OTP</string>
+    <string name="enter_your_travel_id">Enter Your Travel ID</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="e_g_trvl123456">e.g. TRVL123456</string>
+    <string name="welcome">Welcome</string>
+    <string name="enter_travel_id">Enter Travel ID</string>
+>>>>>>> 152816158d6e9ab8254eb5398993969fbc7d9a38
 
 </resources>
