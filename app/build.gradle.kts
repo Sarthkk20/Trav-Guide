@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.ksp)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -14,7 +15,7 @@ android {
 
     defaultConfig {
         applicationId = "com.project.travguide"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -54,5 +55,25 @@ dependencies {
     implementation(libs.splashscreen)
     implementation(libs.glide)
     ksp(libs.glide.ksp)
+
+    // Retrofit + Gson
+    implementation(libs.retrofit)
+    implementation(libs.gson.converter)
+    implementation(libs.gson)
+
+// Firebase (BOM & Auth)
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.firestore)
+
+// Lifecycle ViewModel + LiveData
+    implementation(libs.viewmodel)
+    implementation(libs.livedata)
+    implementation(libs.lifecycle.runtime)
+
+// Kotlin Coroutines
+    implementation(libs.coroutines.core)
+    implementation(libs.coroutines.android)
+
 
 }

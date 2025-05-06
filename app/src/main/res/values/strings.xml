@@ -7,5 +7,8 @@
     <string name="login">Login</string>
     <string name="welcome_to_travguide">Welcome to TravGuide!</string>
     <string name="get_started">Get Started</string>
+    <string name="tourist_spots">\n\n</string>
+    <string name="travelID">\n\n</string>
+    <string name="travelid">travelID</string>
 
 </resources>
